@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "sourceMaps": true,
+  "jsc": {
+    "target": "es2020",
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "optimizer": {
+        "globals": {
+          "envs": [
+            "NODE_ENV:development"
+          ]
+        }
+      }
+    },
+    "baseUrl": "./"
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": false
+}
